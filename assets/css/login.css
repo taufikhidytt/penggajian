@@ -1,0 +1,76 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(../background/the-creative-exchange-d1ngW7SNehM-unsplash.jpg)
+		no-repeat center;
+	background-size: cover;
+	height: 420px;
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 40px;
+	background: rgba(0, 0, 0, 0.7);
+	box-sizing: border-box;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
+}
+
+.box img {
+	width: 100px;
+	border: 3px solid white;
+}
+
+.box h2 {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+}
+.box .Inputbox {
+	position: relative;
+}
+.box .Inputbox input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.box .Inputbox label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.box .Inputbox input:focus ~ label,
+.box .Inputbox input:valid ~ label {
+	top: -18px;
+	left: 0;
+	color: #03a9f4;
+	font-size: 12px;
+}
+.box input[type="submit"] {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #03a9f4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
